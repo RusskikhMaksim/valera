@@ -36,7 +36,7 @@ RSpec.describe Valera do
       it '.check_fatigue' do
         valera_obj.fatigue = 120
         valera_obj.health = 10
-        expect(valera_obj.check_fatigue).to eq(false)
+        expect(valera_obj.check_fatigue).to eq(true)
       end
     end
   end
@@ -46,7 +46,7 @@ RSpec.describe Valera do
       it '.check_fun' do
         valera_obj.fun = - 15
         valera_obj.health = 10
-        expect(valera_obj.check_fun).to eq(false)
+        expect(valera_obj.check_fun).to eq(true)
       end
     end
     context 'when fun less than -10 and health more than 20' do

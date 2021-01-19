@@ -3,9 +3,9 @@ require_relative '../load_save/load_game'
 require_relative '../load_save/save_game'
 
 RSpec.describe LoadGame do
-  let(:valera) {Valera.new}
-  let(:savegame) {SaveGame.new}
-  let(:loadgame) {LoadGame.new}
+  let(:valera) { Valera.new }
+  let(:savegame) { SaveGame.new }
+  let(:loadgame) { LoadGame.new }
   describe '.load' do
     context 'when load stats' do
       it do

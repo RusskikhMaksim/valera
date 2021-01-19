@@ -51,7 +51,7 @@ class Valera
   def stat_set_mana(amount)
     amount = 0 if amount.negative?
     amount = 100 if amount > 100
-    @mp = amount
+    @mana = amount
   end
 
   def stat_set_fatigue(amount)
@@ -64,3 +64,8 @@ class Valera
     @fun = amount
   end
 end
+# val = Valera.new(100, 0, 0, 0, 0)
+#
+# hash = { 'hp' => val.hp, 'mp' => val.mp, 'fun' => val.fun, 'fatigue' => val.fatigue, 'money' => val.money}
+#
+# puts hash

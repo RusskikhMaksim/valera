@@ -77,6 +77,7 @@ class Actions
 
   def sleep(valerka)
     puts "Вы поспали.\n\n"
+    sleep_condition(valerka)
     valerka.stat_set_mana(valerka.mana - 50)
     valerka.stat_set_fatigue(valerka.fatigue - 70)
     valerka

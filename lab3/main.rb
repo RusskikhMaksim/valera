@@ -116,29 +116,3 @@ m.menu
 #     #while
 #   end
 # end
-# class Valera
-#  a = actions.new
-# end
-#
-# class actions
-#   v = Valera.new
-# end
-#
-#
-#
-#
-#
-#
-#
-# class MainMenu
-#   def menu
-#   #something
-#   end
-#
-#   def initialize
-#
-#   end
-#   def ingame_menu
-#     #while
-#   end
-# end

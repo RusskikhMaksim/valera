@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.2/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.2/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.2/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-18T01:05:51+07:00">2021-01-18T01:05:51+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-19T23:34:53+07:00">2021-01-19T23:34:53+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="yellow">
-  89.87%
+      <span class="green">
+  93.29%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.1
+         2.15
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>158</b> relevant lines,
-    <span class="green"><b>142</b> lines covered</span> and
-    <span class="red"><b>16</b> lines missed. </span>
-    (<span class="yellow">
-  89.87%
+    <b>164</b> relevant lines,
+    <span class="green"><b>153</b> lines covered</span> and
+    <span class="red"><b>11</b> lines missed. </span>
+    (<span class="green">
+  93.29%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#fdfd180fa18b5f84477118b7f18d8f67b459d8fb" class="src_link" title="actions.rb">actions.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">89.74 %</td>
-            <td class="cell--number">108</td>
-            <td class="cell--number">78</td>
-            <td class="cell--number">70</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">1.74</td>
+            <td class="green strong cell--number t-file__coverage">96.20 %</td>
+            <td class="cell--number">109</td>
+            <td class="cell--number">79</td>
+            <td class="cell--number">76</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">1.87</td>
             
           </tr>
         
@@ -106,22 +106,22 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#8becf111e4e8718bfc39f1d09bd986ddd7918571" class="src_link" title="load_save/save_game.rb">load_save/save_game.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">20</td>
             <td class="cell--number">14</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">14</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.11</td>
+            <td class="cell--number">1.07</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#45f75c2782f5ab3d28ef58ff01ae298819c60a4b" class="src_link" title="valera.rb">valera.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">82.93 %</td>
-            <td class="cell--number">66</td>
+            <td class="cell--number">71</td>
             <td class="cell--number">41</td>
             <td class="cell--number">34</td>
             <td class="cell--number">7</td>
-            <td class="cell--number">3.83</td>
+            <td class="cell--number">3.93</td>
             
           </tr>
         
@@ -146,8 +146,8 @@
   <div class="header">
     <h3>actions.rb</h3>
     <h4>
-      <span class="yellow">
-  89.74%
+      <span class="green">
+  96.2%
 </span>
 
       lines covered
@@ -156,9 +156,9 @@
     
 
     <div class="t-line-summary">
-      <b>78</b> relevant lines.
-      <span class="green"><b>70</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <b>79</b> relevant lines.
+      <span class="green"><b>76</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
 
     
@@ -1044,7 +1044,7 @@
 
             
 
-            <code class="ruby">    valerka.stat_set_mana(valerka.mana - 50)</code>
+            <code class="ruby">    sleep_condition(valerka)</code>
           </li>
         </div>
       
@@ -1055,7 +1055,7 @@
 
             
 
-            <code class="ruby">    valerka.stat_set_fatigue(valerka.fatigue - 70)</code>
+            <code class="ruby">    valerka.stat_set_mana(valerka.mana - 50)</code>
           </li>
         </div>
       
@@ -1066,18 +1066,18 @@
 
             
 
-            <code class="ruby">    valerka</code>
+            <code class="ruby">    valerka.stat_set_fatigue(valerka.fatigue - 70)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="83">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="83">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">  end</code>
+            
+
+            <code class="ruby">    valerka</code>
           </li>
         </div>
       
@@ -1088,12 +1088,23 @@
 
             
 
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
+          <li class="covered" data-hits="1" data-linenumber="86">
             <span class="hits">1</span>
             
 
@@ -1104,8 +1115,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="86">
-            
+          <li class="covered" data-hits="3" data-linenumber="87">
+            <span class="hits">3</span>
             
 
             
@@ -1115,8 +1126,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="87">
-            
+          <li class="covered" data-hits="2" data-linenumber="88">
+            <span class="hits">2</span>
             
 
             
@@ -1126,8 +1137,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="88">
-            
+          <li class="covered" data-hits="2" data-linenumber="89">
+            <span class="hits">2</span>
             
 
             
@@ -1137,8 +1148,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="89">
-            
+          <li class="covered" data-hits="1" data-linenumber="90">
+            <span class="hits">1</span>
             
 
             
@@ -1148,8 +1159,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="90">
-            
+          <li class="covered" data-hits="1" data-linenumber="91">
+            <span class="hits">1</span>
             
 
             
@@ -1159,24 +1170,13 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="91">
-            
+          <li class="covered" data-hits="1" data-linenumber="92">
+            <span class="hits">1</span>
             
 
             
 
             <code class="ruby">      puts &quot;Как живой, но не живой.\n\n&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="92">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1187,7 +1187,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1198,18 +1198,18 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="95">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="95">
+            
             
 
             
 
-            <code class="ruby">  def play_dota(valerka)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1220,7 +1220,7 @@
 
             
 
-            <code class="ruby">    win = rand(100)</code>
+            <code class="ruby">  def play_dota(valerka)</code>
           </li>
         </div>
       
@@ -1231,13 +1231,24 @@
 
             
 
+            <code class="ruby">    win = rand(100)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="98">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    if win &gt; 50</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="98">
-            
+          <li class="covered" data-hits="1" data-linenumber="99">
+            <span class="hits">1</span>
             
 
             
@@ -1247,8 +1258,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="99">
-            
+          <li class="covered" data-hits="1" data-linenumber="100">
+            <span class="hits">1</span>
             
 
             
@@ -1258,7 +1269,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="100">
+          <li class="never" data-hits="" data-linenumber="101">
             
             
 
@@ -1269,8 +1280,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="101">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="102">
+            
             
 
             
@@ -1280,8 +1291,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="102">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="103">
+            
             
 
             
@@ -1291,8 +1302,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="103">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="104">
+            
             
 
             
@@ -1302,7 +1313,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="104">
+          <li class="never" data-hits="" data-linenumber="105">
             
             
 
@@ -1313,7 +1324,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="105">
+          <li class="covered" data-hits="1" data-linenumber="106">
             <span class="hits">1</span>
             
 
@@ -1324,7 +1335,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="106">
+          <li class="covered" data-hits="1" data-linenumber="107">
             <span class="hits">1</span>
             
 
@@ -1335,7 +1346,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="107">
+          <li class="never" data-hits="" data-linenumber="108">
             
             
 
@@ -1346,7 +1357,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="108">
+          <li class="never" data-hits="" data-linenumber="109">
             
             
 
@@ -1877,8 +1888,8 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>14</b> relevant lines.
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1995,7 +2006,7 @@
 
             
 
-            <code class="ruby">    hash = { &#39;health&#39; =&gt; val.health, &#39;mana&#39; =&gt; val.mana, &#39;fun&#39; =&gt; val.fun, &#39;fatigue&#39; =&gt; val.fatigue, &#39;money&#39; =&gt; val.money }</code>
+            <code class="ruby">    health = val.health</code>
           </li>
         </div>
       
@@ -2006,12 +2017,78 @@
 
             
 
+            <code class="ruby">    mana = val.mana</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fun = val.fun</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    fatigue = val.fatigue</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    money = val.money</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    hash = { &#39;health&#39; =&gt; health, &#39;mana&#39; =&gt; mana, &#39;fun&#39; =&gt; fun, &#39;fatigue&#39; =&gt; fatigue, &#39;money&#39; =&gt; money }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    json = hash.to_json</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="12">
+          <li class="covered" data-hits="2" data-linenumber="18">
             <span class="hits">2</span>
             
 
@@ -2022,7 +2099,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -2033,7 +2110,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -2581,8 +2658,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="47">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="47">
+            <span class="hits">9</span>
             
 
             
@@ -2592,8 +2669,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="48">
-            <span class="hits">8</span>
+          <li class="covered" data-hits="9" data-linenumber="48">
+            <span class="hits">9</span>
             
 
             
@@ -2664,7 +2741,7 @@
 
             
 
-            <code class="ruby">    @mp = amount</code>
+            <code class="ruby">    @mana = amount</code>
           </li>
         </div>
       
@@ -2757,8 +2834,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="63">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="14" data-linenumber="63">
+            <span class="hits">14</span>
             
 
             
@@ -2768,8 +2845,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="13" data-linenumber="64">
-            <span class="hits">13</span>
+          <li class="covered" data-hits="14" data-linenumber="64">
+            <span class="hits">14</span>
             
 
             
@@ -2797,6 +2874,61 @@
             
 
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby"># val = Valera.new(100, 0, 0, 0, 0)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">#</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby"># hash = { &#39;hp&#39; =&gt; val.hp, &#39;mp&#39; =&gt; val.mp, &#39;fun&#39; =&gt; val.fun, &#39;fatigue&#39; =&gt; val.fatigue, &#39;money&#39; =&gt; val.money}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">#</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby"># puts hash</code>
           </li>
         </div>
       
