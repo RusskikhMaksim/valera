@@ -1,0 +1,83 @@
+class MainMenu
+  def menu
+    @still_playing = true
+    puts "Добро пожаловать в игру Маргинал Валера"
+    while still_playing == true do
+      puts "Выберите действие:\n1 - начать игру\n2 - настройки\n3 - загрузить сохранение\n4 - выход"
+      choice = gets.chomp
+      case choice
+      when 1
+        #run_game
+      when 2
+        #configure
+      when 3
+        #load
+      when 4
+        #exit
+        @still_playing = false
+      end
+    end
+  end
+
+  def run_game
+    @still_run_game = true
+    while @still_run_game == true do
+      player_choice = print_actions_get_choice
+
+      case player_choice
+      when 1
+        #action_work
+      when 2
+        #action_priroda
+      when 3
+        #action buhat and sirik
+      when 4
+        #action_buhat_v_bare
+      when 5
+        #action_buhat_s_marginalami
+      when 6
+        #action_v_metro
+      when 7
+        #action_spat
+      when 8
+        #action_dota
+      when 9
+        #print_info
+      when 10
+        @still_run_game = false
+      end
+    end
+  end
+
+  def print_actions_get_choice
+    puts "Выберите действие: 1 - пойти на работу, 2 - созерцать природу, 3 - пить вино и смотреть сериал, 4 - сходить в бар,"
+    puts "5 - выпить с маргинальными личностями, 6 - петь в метро, 7 - спать, 8 - play dotka, 9 - информация о действиях, 10 - меню"
+    player_choice = gets.chomp
+  end
+
+  def print_info
+    puts "Пойти на работу(Можно только если алкоголь < 50 и усталость < 10:"
+    puts "\t-5 жизнерадостность, -30 мана, +100$, +70 усталость\n\n"
+    puts "Созерцать природу:"
+    puts "\t+1 жизнерадостность, -10 алкоголь, +10 усталость\n\n"
+    puts "Пить вино и смотреть сериал:"
+    puts "\t-1 жизнерадостность, +30 алкоголь, +10 усталость, -5 к здоровью, -20$\n\n"
+    puts "Сходить в бар:"
+    puts "\t+1 жизнерадостность, +60 алкоголь, +40 усталость, -10 здоровье, -100$\n\n"
+    puts "Выпить с маргинальными личностями:"
+    puts "\t+5 жизнерадостность, -80 здоровье, +90 алкоголь, +80 усталость, -150$\n\n"
+    puts "Петь в метро:"
+    puts "\t +1 жизнерадостность, +10 алкоголь, +10$, (еще + $50 если изначально алкоголь был > 40 & < 70), +20 усталость\n\n"
+    puts "Спать:"
+    puts "\t+90 здоровье если алкоголь < 30, -3 жизнерадостность если алкоголь > 70, -50 алкоголь, -70 усталость\n\n"
+    puts "Play Dotka:"
+    puts "\tесли победил, +3 жизнерадостность, +10 усталость\n\tесли проиграл, -2 жизнерадостность, -10 к здоровью\n\n"
+  end
+
+  def print_stats(valerka)
+    puts "Текущие характеристики:\n\thp: #{valerka.hp}, mp: #{valerka.mp}, fun: #{valerka.fun}, fatigue: #{valerka.fatigue}, money: #{valerka.money}\n"
+  end
+end
+
+a = MainMenu.new
+a.menu
